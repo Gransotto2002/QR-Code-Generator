@@ -17,13 +17,14 @@ body {
   align-items: center;
   background: rgb(21,35,80);
   background: linear-gradient(156deg, rgba(21,35,80,1) 18%, rgba(68,126,129,1) 22%, rgba(48,34,45,1) 45%);
+  padding: 10px;
 }
 
 .box {
   display: flex;
   flex-direction: column;
-  width: 380px;
-  height: 260px;
+  max-width: 380px;
+  height: auto;
   background: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -43,12 +44,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
   border: 1px solid rgb(204, 199, 199);
   opacity: 0;
   pointer-events: none;
   padding: 40px;
-  margin-top: 25px;
+  margin-top: 5px;
 }
 
 .box.active .qrcode{
@@ -95,7 +95,7 @@ button:hover{
 .social{
   display: flex;
   margin-top: 50px;
-  gap: 100px;
+  gap: 50px;
 }
 
 .background {
